@@ -1,0 +1,20 @@
+{
+    "name": "donglei/ithow-function",
+    "description": "useful function",
+	"homepage": "http://www.ithox.com/",
+    "authors": [
+        {
+            "name": "donglei",
+            "email": "donglei@donglei.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+		"php": ">=5.3.0"
+    },
+	"autoload":{
+		"files": [
+			"src/function.php"
+		]
+	}
+}
