@@ -3,6 +3,7 @@
 if(!function_exists('ee'))
 {
 	function ee() {
+                header("Content-type: text/html; charset=utf-8");
 		echo '<pre>';
 		array_map(function($msg) {
 			print_r($msg);
