@@ -62,3 +62,17 @@ if(!function_exists('getdottime'))
         return date('Y.m.d', strtotime($date));
     }
 }
+
+function array2xml($data, $root = '<root/>') 
+{
+    $xml = new SimpleXMLElement($root );
+    array_walk_recursive($data, function($value, $key) use($xml){
+        
+        $node = dom_import_simplexml($xml);
+        $element  =  $node->appendChild(new  DOMElement ( $key ));
+        $no = $element->ownerDocument; 
+        $element->appendChild($no->createCDATASection($value));  
+    });
+    return $xml->asXML();
+    
+}
