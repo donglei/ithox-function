@@ -1,0 +1,33 @@
+app
+	controllers
+	models
+	repositites
+	libraries
+	helpers
+	
+config
+	database.ini
+	session.ini
+	view.ini
+	app.ini
+	cache.ini
+database
+	migrations
+	seeds
+public
+	index.html
+	assets
+		css
+		js
+		imgs
+		fonts
+resources
+	lang
+		en
+		zh
+	views
+storage
+	view
+	session
+	cache
+	logs
